@@ -1,8 +1,36 @@
 <nav
-    class="flex flex-row items-center justify-between px-5 h-14 fixed w-screen top-0 bg-amber-50 z-40"
+    class="flex flex-row items-center justify-between px-5 h-14 fixed w-screen top-0
+     bg-amber-50 z-40"
 >
     <span class="text-3xl capitalize font-thin">insure</span>
-    <button>
+    <button id="navBtn">
         <img src="images/icon-hamburger.svg" alt="" />
     </button>
+    <div
+        class="fixed w-screen bg-[#342d46] left-0 top-14
+    text-white rounded-b-lg hiddenNav
+    h-130 pb-40 duration-400"
+        id="navbarContent"
+    >
+        <ul
+            class="uppercase flex flex-col items-center justify-evenly
+            h-70 font-semibold"
+        >
+            <li><a class="nav-link " href="#sec1">how we work</a></li>
+            <li><a class="nav-link " href="#sec2">blog</a></li>
+            <li><a class="nav-link " href="#sec3">account</a></li>
+            <li class="text-center">
+                <a class="nav-link px-27 py-3 border-2 border-white" href="#"
+                    >view plans</a
+                >
+            </li>
+        </ul>
+
+        <img
+            class="absolute left-0 w-screen right-0 bottom-0
+            -z-10"
+            src="/images/bg-pattern-mobile-nav.svg"
+            alt=""
+        />
+    </div>
 </nav>
